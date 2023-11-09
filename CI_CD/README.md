@@ -1,0 +1,1 @@
+CI/CD notes and examples based on the excellant Real Python details - https://realpython.com/python-continuous-integration/
