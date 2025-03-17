@@ -24,9 +24,20 @@ class Node:
                 else:
                     self.right.insert(data)
 
+# subroutine to print the 'tree' in order ....
+def inorder_print(root):
+    if root is None:
+        return
+    else:
+        inorder_print(root.left)
+        print(root.data, end=' ')
+        inorder_print(root.right)
+
 tree = Node(10)
 tree.insert(12)
 tree.insert(3)
 tree.insert(4)
 tree.insert(10)
 tree.insert(18)
+
+inorder_print(tree)
